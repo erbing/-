@@ -1,0 +1,511 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+
+body{
+	font-family:"microsoft yahei";
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container {
+  /*  width: 320px;
+    height: 480px;*/
+	width: 100%;
+  height: 100%;
+	background:#fff;
+	position: relative;
+}  
+
+.swiper-slide{
+	width:100%;
+	height:100%;
+	background-size:100% 100%;
+}
+
+img{
+	display:block;
+}
+
+.swiper-pagination-bullet {
+width: 6px;
+height: 6px;
+background: #fff;
+opacity: .4;
+}
+
+.swiper-pagination-bullet-active {
+opacity: 1;
+}
+
+.ani{
+	position:absolute;
+	}
+.txt{
+	position:absolute;
+}
+
+
+/*
+*业务代码
+*/
+
+.header1{
+	width: 100%;
+	height: 7.7 /2rem;
+	background: #71D5DF;
+	text-align: center;
+	.mian-img{
+		width:3.2rem;
+	}
+
+	.header-text{
+		font-size: 0.13rem;
+		color: #E95E99;
+		padding: 2% 3%;
+		text-align: left;
+		letter-spacing: 2px;
+	}
+
+	.header-a{
+		width: 50%;
+		float: left;
+		text-align: center;
+		background:#71D5DF;
+	}
+
+	.start-btn{
+		width: 5.79 /4rem;
+		height: 1.89 /4rem;
+		margin-left: 4.2%;
+	}
+
+	.start-btn2{
+		width: 5.79 /4rem;
+		height: 1.89 /4rem;
+		margin-left: 4.2%;
+	}
+
+
+	.start-btn1{
+		width: 5.79 /4rem;
+		height: 1.89 /4rem;
+		margin-left: 4.2%;
+	}
+}
+
+
+.header2{
+	width: 100%;
+	height: 7.7 /2rem;
+	background: #71D5DF;
+	text-align: center;
+
+	.gamewarpper{
+		width: 100%;
+		height: 7.7 /2rem;
+		padding: 0.05rem 0.24rem;
+		box-sizing: border-box;
+		
+		.gametime{
+			color: #fff;
+			text-align: center;
+			.realword{
+				font-size: 0.16rem;
+			}
+			.realtime{
+				font-size: 0.26rem;
+				font-weight: 500;
+			}
+		}
+		
+		.gamemain{
+			margin-top: 0.05rem;
+			width: 100%;
+			height: auto;
+			.imgul{
+				list-style-type:none; 
+				li{
+					width: 30%;
+					float: left;
+					margin: 0 1.5%;
+					margin-bottom: 1.5%;
+					img{
+						width: 1.7 /2rem;
+						height: 1.7 /2rem
+					}
+
+					.animate{
+							-webkit-animation-name: cd-rotate;
+							-webkit-animation-duration: 500ms;
+		   			  -webkit-animation-iteration-count: 1; /*无限循环*/
+		   			  -webkit-animation-timing-function: linear;
+					}
+
+					.unanimate{
+							-webkit-animation-name: cd-rotate;
+							-webkit-animation-duration: 400ms;
+		   			  -webkit-animation-iteration-count: 1; /*无限循环*/
+		   			  -webkit-animation-timing-function: linear;
+					}
+
+				}
+			}
+		}
+	
+		.gametext{
+			margin-top: 0.1rem;
+			font-size: 0.15rem;
+			color: #E95E99;
+		}
+	}
+
+	.layerwith{
+  	width: 100%;
+  	height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		filter:alpha(opacity=0);     
+	  -moz-opacity:0;             
+	  -khtml-opacity:0;            
+	  opacity: 0; 
+	  background: #fff;			
+	}
+}
+
+.layerok{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+  img{
+  	width:3.2rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 0.8rem;
+  }
+  .layerok-text{
+  	z-index: 10;
+  	width: 100%;
+  	color: #fff;
+  	text-align: center;
+  	font-size: 0.16rem;
+  	position: absolute;
+  	top: 3.0rem;
+  }
+
+  .layerok-btn{
+  	position: absolute;
+  	top: 3.6rem;
+  	left: 50%;
+		z-index: 10;
+		color: #fff;
+		font-size: 0.18rem;
+		font-weight: 600;
+		word-spacing: 2px;
+		width: 5.79/ 4rem;
+		height: 1.89/ 4rem;
+		background: #F3C307;
+		border:none;
+		border-radius: 5px;
+		margin: 0 auto;
+		margin-left: -5.79/ 8rem;
+  }
+
+  .layer{
+  	width: 100%;
+  	height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		filter:alpha(opacity=68);     
+	  -moz-opacity:0.68;             
+	  -khtml-opacity:0.68;            
+	  opacity: 0.68; 
+	  background: #000;	
+	} 
+}
+
+
+.layerno{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+  .bximg{
+  	width:3.2rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 0.8rem;
+  }
+
+  .shareimg{
+  	width:3.2rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 0;
+  }
+
+  .layerok-text{
+  	z-index: 10;
+  	width: 100%;
+  	color: #fff;
+  	text-align: center;
+  	font-size: 0.16rem;
+  	position: absolute;
+  	top: 2.8rem;
+  }
+
+  .layerok-text2{
+  	z-index: 10;
+  	width: 100%;
+  	color: #fff;
+  	text-align: center;
+  	font-size: 0.16rem;
+  	position: absolute;
+  	top: 3.0rem;
+  }
+  .layerok-btn{
+  	position: absolute;
+  	top: 3.6rem;
+  	left: 50%;
+		z-index: 10;
+		color: #fff;
+		font-size: 0.18rem;
+		font-weight: 600;
+		word-spacing: 2px;
+		width: 5.79/ 4rem;
+		height: 1.89/ 4rem;
+		background: #F3C307;
+		border:none;
+		border-radius: 5px;
+		margin: 0 auto;
+		margin-left: -5.79/ 8rem;
+  }
+
+  .layer{
+  	width: 100%;
+  	height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		filter:alpha(opacity=68);     
+	  -moz-opacity:0.68;             
+	  -khtml-opacity:0.68;            
+	  opacity: 0.68; 
+	  background: #000;	
+	} 
+}
+
+.header3{
+	width: 100%;
+	height: 7.7 /2rem;
+	background: #71D5DF;
+	text-align: center;
+	position: relative;
+	.successimg{
+		position: relative;
+		left: 50%;
+		padding: 0.3rem 0px; 
+		margin-left: -3.05/ 2rem;
+		width: 3.05rem;
+	}
+	.shareagine{
+		padding: 0 0.08rem;
+		color: #E95E99;
+		text-align: center;
+		font-size: 0.15rem;
+		margin-bottom: 0.12rem;
+	}
+	
+	.shareaginebtn{
+		width: 5.79 /4rem;
+		height: 1.89 /4rem;
+		margin: 0 auto;
+	}
+}
+
+.layer3{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+  img{
+  	width:3.2rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 0.8rem;
+  }
+
+  .shareimg{
+  	width:3.2rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 0;
+  }
+
+  .shareknow{
+  	width: 5.79 /4rem;
+		height: 1.89 /4rem;
+  	z-index: 10;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	margin-left: -5.79 /8rem;
+  }
+
+  .layer{
+  	width: 100%;
+  	height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		filter:alpha(opacity=68);     
+	  -moz-opacity:0.68;             
+	  -khtml-opacity:0.68;            
+	  opacity: 0.68; 
+	  background: #000;	
+	} 
+}
+
+
+footer{
+	width: 100%;
+	//height: 2.72rem;
+	// position: absolute;
+	// bottom: 0px;
+	background: #71D5DF;
+	.ads-img{
+		width:3.2rem;
+	}
+}
+
+.clear{
+	clear: both;
+}
+
+.hao{
+	background: #000;
+}
+
+
+//动画效果 
+
+@-webkit-keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(90deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-moz-keyframes cd-rotate {
+  0% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(80deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(90deg);
+    -moz-transform: perspective(800px) rotateY(90deg);
+    -ms-transform: perspective(800px) rotateY(90deg);
+    -o-transform: perspective(800px) rotateY(90deg);
+    transform: perspective(800px) rotateY(90deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    -moz-transform: perspective(800px) rotateY(180deg);
+    -ms-transform: perspective(800px) rotateY(180deg);
+    -o-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@-moz-keyframes cd-rotate-inverse {
+  0% {
+    -moz-transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    -moz-transform: perspective(800px) rotateY(-180deg);
+    -ms-transform: perspective(800px) rotateY(-180deg);
+    -o-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    -moz-transform: perspective(800px) rotateY(20deg);
+    -ms-transform: perspective(800px) rotateY(20deg);
+    -o-transform: perspective(800px) rotateY(20deg);
+    transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+}
